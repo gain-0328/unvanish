@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css');
+
+:root {
+  --black: #0a0a0a;
+  --white: #ffffff;
+  --red: #b60000;
+  --grey: #888;
+  --grey-light: #c0c0c0;
+  --font-display: 'Oranienbaum', 'SUIT', serif;
+  --font-sans: 'SUIT', sans-serif;   
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease var(--delay, 0ms), transform 0.65s ease var(--delay, 0ms);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── PAGE ── */
+.pl-page {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+/* ── HEADER ── */
+.pl-header {
+  padding: 100px 7vw 48px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+.pl-header_eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 200;
+  letter-spacing: 0.55rem;
+  color: var(--black);
+  margin-bottom: 14px;
+}
+.pl-header_title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+  margin-bottom: 10px;
+}
+.pl-header_sub {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+  color: var(--grey);
+  margin-bottom: 28px;
+}
+
+/* ── CONTROLS ── */
+.pl-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 12px;
+  border-bottom: 1px solid #e0e0e0;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.pl-tabs {
+  display: flex;
+  gap: 0;
+}
+.pl-tab {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  padding: 8px 18px;
+  border: 1px solid #d0d0d0;
+  border-right: none;
+  background: transparent;
+  color: var(--grey);
+  cursor: pointer;
+}
+.pl-tab:last-child{
+  border-right: 1px solid #d0d0d0 !important;
+}
+
+.pl-tab.active,
+.pl-tab:hover {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+  z-index: 1;
+}
+
+.pl-controls_right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.pl-count {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+  color: var(--grey);
+}
+.pl-sort {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 300;
+  letter-spacing: 0.15rem;
+  color: var(--black);
+  border: 1px solid #d0d0d0;
+  background: transparent;
+  padding: 6px 12px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23888'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 28px;
+}
+
+/* ── GRID ── */
+.pl-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 900px)
+{ .pl-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px)
+{ .pl-grid { grid-template-columns: 1fr;   gap: 10px; } }
+
+/* ── CARD ── */
+.pl-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--white);
+}
+.pl-card:hover {
+  background-color: #f9f9f9;
+  z-index: 1;
+  position: relative;
+}
+
+.pl-card_img-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  background-color: var(--white);
+}
+.pl-card_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.65s cubic-bezier(0.25,0.46,0.45,0.94), opacity 0.25s;
+}
+.pl-card:hover .pl-card_img { transform: scale(1.05); }
+
+.pl-card_sold-out {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 300;
+  letter-spacing: 0.35rem;
+  color: var(--grey);
+}
+
+.pl-card_badges {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  padding: 3px 8px;
+}
+.badge--new  { background: var(--black); color: var(--white); }
+.badge--best { background: var(--grey);  color: var(--white); }
+.badge--sale { background: var(--red); color: var(--white); border: 1px solid var(--white); }
+
+
+
+/* ── CARD BODY ── */
+.pl-card_body {
+  height: 150px;
+  padding: 20px 22px 26px;
+}
+
+.pl-card_eng {
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+  color: var(--grey);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pl-card_name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+.pl-card_keywords {
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  color: var(--grey-light);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.pl-card_price-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.pl-card_original {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 200;
+  color: var(--grey-light);
+  text-decoration: line-through;
+}
+.pl-card_price {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  color: var(--black);
+}
+.pl-card_price.sold { color: var(--grey); }
+
+.pl-card_variants {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pl-card_vol {
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 200;
+  letter-spacing: 0.15rem;
+  color: var(--grey);
+  border: 1px solid #d0d0d0;
+  padding: 2px 7px;
+}
+
+/* ── EMPTY ── */
+.pl-empty {
+  padding: 120px 7vw;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+  color: var(--grey);
+}

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css');
+
+:root {
+  --black: #0a0a0a;
+  --white: #ffffff;
+  --red: #b60000;
+  --grey: #888;
+  --grey-light: #c0c0c0;
+  --font-display: 'Oranienbaum', 'SUIT', serif;
+  --font-sans: 'SUIT', sans-serif;
+}
+
+/* ── REVEAL ── */
+.h-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease var(--delay, 0ms), transform 0.65s ease var(--delay, 0ms);
+}
+.h-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ────────────────────────────────
+   VIDEO HERO
+──────────────────────────────── */
+.video-hero {
+  position: relative;
+  width: 100%;
+  /* 헤더(70px) 제외하고 뷰포트 전체 높이 — 스크롤 전에 다 보임 */
+  height: calc(100vh - 70px);
+  background: #000;
+  overflow: hidden;
+}
+
+.video-hero__iframe-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.video-hero__iframe-wrap iframe,
+#yt-player,
+#yt-player iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+/* ────────────────────────────────
+   BRAND MESSAGE
+──────────────────────────────── */
+.brand-msg {
+  text-align: center;
+  padding: 100px 7vw;
+  border-bottom: 1px solid #e0e0e0;
+}
+.brand-msg__en {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 200;
+  letter-spacing: 0.55rem;
+  color: var(--grey-light);
+  margin: 0 0 20px;
+}
+.brand-msg__ko {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--black);
+  margin: 0 0 28px;
+}
+.brand-msg__line {
+  width: 32px;
+  height: 1px;
+  background: #d0d0d0;
+  margin: 0 auto;
+}
+
+/* ────────────────────────────────
+   PRODUCT SECTION
+──────────────────────────────── */
+.product-section {
+  padding: 80px 7vw;
+  border-bottom: 1px solid #e0e0e0;
+}
+.product-section__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.product-section__tag {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 200;
+  letter-spacing: 0.4rem;
+  color: var(--black);
+}
+.product-section__more {
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 200;
+  letter-spacing: 0.25rem;
+  color: var(--grey);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.product-section__more:hover { color: var(--black); }
+
+.product-section__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 900px) {
+  .product-section__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .product-section__grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+}
+
+/* ────────────────────────────────
+   HOME CARD
+──────────────────────────────── */
+.home-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--white);
+}
+.home-card:hover { background: #f9f9f9; }
+
+.home-card__img-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.home-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.home-card:hover .home-card__img { transform: scale(1.05); }
+
+.home-card__badges {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.hbadge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  padding: 3px 8px;
+}
+.hbadge--new  { background: var(--black); color: var(--white); }
+.hbadge--best { background: var(--grey);  color: var(--white); }
+.hbadge--sale { background: var(--red);   color: var(--white); }
+
+.home-card__body { padding: 0 2px; }
+.home-card__eng {
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+  color: var(--grey);
+  margin: 0 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.home-card__name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--black);
+  margin: 0 0 8px;
+}
+.home-card__price {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  color: var(--black);
+  margin: 0;
+}
