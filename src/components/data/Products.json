@@ -14,13 +14,13 @@
         "discount": 5,
         "stock": 10,
         "images": {
-          "main": "/images/extrait/pistachio/1.png",
+          "main": "images/extrait/pistachio/1.png",
           "detail": [
-            "/images/extrait/pistachio/1-1.jpg",
-            "/images/extrait/pistachio/1-2.jpg",
-            "/images/extrait/pistachio/1-3.jpg",
-            "/images/extrait/pistachio/1-4.jpg",
-            "/images/extrait/pistachio/1-5.jpg"
+            "images/extrait/pistachio/1-1.jpg",
+            "images/extrait/pistachio/1-2.jpg",
+            "images/extrait/pistachio/1-3.jpg",
+            "images/extrait/pistachio/1-4.jpg",
+            "images/extrait/pistachio/1-5.jpg"
           ]
         }
       },
@@ -31,7 +31,7 @@
         "discount": 20,
         "stock": 5,
         "images": {
-          "main": "/images/extrait/pistachio/3ml/1.jpg"
+          "main": "images/extrait/pistachio/3ml/1.jpg"
         }
       }
     ],
@@ -90,12 +90,12 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/extrait/sea-of-green/1.jpg",
+          "main": "images/extrait/sea-of-green/1.jpg",
           "detail": [
-            "/images/extrait/sea-of-green/1-1.jpg",
-            "/images/extrait/sea-of-green/1-2.jpg",
-            "/images/extrait/sea-of-green/1-3.jpg",
-            "/images/extrait/sea-of-green/1-4.jpg"
+            "images/extrait/sea-of-green/1-1.jpg",
+            "images/extrait/sea-of-green/1-2.jpg",
+            "images/extrait/sea-of-green/1-3.jpg",
+            "images/extrait/sea-of-green/1-4.jpg"
           ]
         }
       },
@@ -106,7 +106,7 @@
         "discount": null,
         "stock": 5,
         "images": {
-          "main": "/images/extrait/sea-of-green/3ml/1.jpg"
+          "main": "images/extrait/sea-of-green/3ml/1.jpg"
         }
       }
     ],
@@ -164,11 +164,11 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/extrait/pear-cascade/1.jpg",
+          "main": "images/extrait/pear-cascade/1.jpg",
           "detail": [
-            "/images/extrait/pear-cascade/1-1.jpg",
-            "/images/extrait/pear-cascade/1-2.jpg",
-            "/images/extrait/pear-cascade/1-3.jpg"
+            "images/extrait/pear-cascade/1-1.jpg",
+            "images/extrait/pear-cascade/1-2.jpg",
+            "images/extrait/pear-cascade/1-3.jpg"
           ]
         }
       },
@@ -179,7 +179,7 @@
         "discount": null,
         "stock": 5,
         "images": {
-          "main": "/images/extrait/pear-cascade/3ml/1.jpg"
+          "main": "images/extrait/pear-cascade/3ml/1.jpg"
         }
       }
     ],
@@ -236,12 +236,12 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/extrait/white-cuddle/1.jpg",
+          "main": "images/extrait/white-cuddle/1.jpg",
           "detail": [
-            "/images/extrait/white-cuddle/1-1.jpg",
-            "/images/extrait/white-cuddle/1-2.jpg",
-            "/images/extrait/white-cuddle/1-3.jpg",
-            "/images/extrait/white-cuddle/1-4.jpg"
+            "images/extrait/white-cuddle/1-1.jpg",
+            "images/extrait/white-cuddle/1-2.jpg",
+            "images/extrait/white-cuddle/1-3.jpg",
+            "images/extrait/white-cuddle/1-4.jpg"
           ]
         }
       },
@@ -252,7 +252,7 @@
         "discount": null,
         "stock": 5,
         "images": {
-          "main": "/images/extrait/white-cuddle/3ml/1.jpg"
+          "main": "images/extrait/white-cuddle/3ml/1.jpg"
         }
       }
     ],
@@ -312,12 +312,12 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/extrait/long-last-vanilla/1.jpg",
+          "main": "images/extrait/long-last-vanilla/1.jpg",
           "detail": [
-            "/images/extrait/long-last-vanilla/1-1.jpg",
-            "/images/extrait/long-last-vanilla/1-2.jpg",
-            "/images/extrait/long-last-vanilla/1-3.jpg",
-            "/images/extrait/long-last-vanilla/1-4.jpg"
+            "images/extrait/long-last-vanilla/1-1.jpg",
+            "images/extrait/long-last-vanilla/1-2.jpg",
+            "images/extrait/long-last-vanilla/1-3.jpg",
+            "images/extrait/long-last-vanilla/1-4.jpg"
           ]
         }
       },
@@ -328,7 +328,7 @@
         "discount": null,
         "stock": 5,
         "images": {
-          "main": "/images/extrait/long-last-vanilla/3ml/1.jpg"
+          "main": "images/extrait/long-last-vanilla/3ml/1.jpg"
         }
       }
     ],
@@ -384,12 +384,12 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/extrait/vital-movement/1.jpg",
+          "main": "images/extrait/vital-movement/1.jpg",
           "detail": [
-            "/images/extrait/vital-movement/1-1.jpg",
-            "/images/extrait/vital-movement/1-2.jpg",
-            "/images/extrait/vital-movement/1-3.jpg",
-            "/images/extrait/vital-movement/1-4.jpg"
+            "images/extrait/vital-movement/1-1.jpg",
+            "images/extrait/vital-movement/1-2.jpg",
+            "images/extrait/vital-movement/1-3.jpg",
+            "images/extrait/vital-movement/1-4.jpg"
           ]
         }
       },
@@ -400,7 +400,7 @@
         "discount": null,
         "stock": 5,
         "images": {
-          "main": "/images/extrait/vital-movement/3ml/1.jpg"
+          "main": "images/extrait/vital-movement/3ml/1.jpg"
         }
       }
     ],
@@ -456,12 +456,12 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/extrait/the-third-night/1.jpg",
+          "main": "images/extrait/the-third-night/1.jpg",
           "detail": [
-            "/images/extrait/the-third-night/1-1.jpg",
-            "/images/extrait/the-third-night/1-2.jpg",
-            "/images/extrait/the-third-night/1-3.jpg",
-            "/images/extrait/the-third-night/1-4.jpg"
+            "images/extrait/the-third-night/1-1.jpg",
+            "images/extrait/the-third-night/1-2.jpg",
+            "images/extrait/the-third-night/1-3.jpg",
+            "images/extrait/the-third-night/1-4.jpg"
           ]
         }
       },
@@ -472,7 +472,7 @@
         "discount": null,
         "stock": 5,
         "images": {
-          "main": "/images/extrait/the-third-night/3ml/1.jpg"
+          "main": "images/extrait/the-third-night/3ml/1.jpg"
         }
       }
     ],
@@ -486,12 +486,12 @@
       "INTENSELY SWEET CONCENTRATION",
       "A DEEP AND LASTING MUSK TRAIL"
     ],
-    "thumbnail": "/images/extrait/the-third-night/1.jpg",
+    "thumbnail": "images/extrait/the-third-night/1.jpg",
     "images": [
-      "/images/extrait/the-third-night/1-1.jpg",
-      "/images/extrait/the-third-night/1-2.jpg",
-      "/images/extrait/the-third-night/1-3.jpg",
-      "/images/extrait/the-third-night/1-4.jpg"
+      "images/extrait/the-third-night/1-1.jpg",
+      "images/extrait/the-third-night/1-2.jpg",
+      "images/extrait/the-third-night/1-3.jpg",
+      "images/extrait/the-third-night/1-4.jpg"
     ],
     "notes": {
       "top": [
@@ -538,11 +538,11 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/oil/pear-cascade/1.jpg",
+          "main": "images/oil/pear-cascade/1.jpg",
           "detail": [
-            "/images/oil/pear-cascade/1-1.jpg",
-            "/images/oil/pear-cascade/1-2.jpg",
-            "/images/oil/pear-cascade/1-3.jpg"
+            "images/oil/pear-cascade/1-1.jpg",
+            "images/oil/pear-cascade/1-2.jpg",
+            "images/oil/pear-cascade/1-3.jpg"
           ]
         }
       }
@@ -600,12 +600,12 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/oil/sea-of-green/1.jpg",
+          "main": "images/oil/sea-of-green/1.jpg",
           "detail": [
-            "/images/oil/sea-of-green/1-1.jpg",
-            "/images/oil/sea-of-green/1-2.jpg",
-            "/images/oil/sea-of-green/1-3.jpg",
-            "/images/oil/sea-of-green/1-4.jpg"
+            "images/oil/sea-of-green/1-1.jpg",
+            "images/oil/sea-of-green/1-2.jpg",
+            "images/oil/sea-of-green/1-3.jpg",
+            "images/oil/sea-of-green/1-4.jpg"
           ]
         }
       }
@@ -664,12 +664,12 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/oil/foggy-hinoki/1.jpg",
+          "main": "images/oil/foggy-hinoki/1.jpg",
           "detail": [
-            "/images/oil/foggy-hinoki/1-1.jpg",
-            "/images/oil/foggy-hinoki/1-2.jpg",
-            "/images/oil/foggy-hinoki/1-3.jpg",
-            "/images/oil/foggy-hinoki/1-4.jpg"
+            "images/oil/foggy-hinoki/1-1.jpg",
+            "images/oil/foggy-hinoki/1-2.jpg",
+            "images/oil/foggy-hinoki/1-3.jpg",
+            "images/oil/foggy-hinoki/1-4.jpg"
           ]
         }
       }
@@ -727,12 +727,12 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/oil/first-body/1.jpg",
+          "main": "images/oil/first-body/1.jpg",
           "detail": [
-            "/images/oil/first-body/1-1.jpg",
-            "/images/oil/first-body/1-2.jpg",
-            "/images/oil/first-body/1-3.jpg",
-            "/images/oil/first-body/1-4.jpg"
+            "images/oil/first-body/1-1.jpg",
+            "images/oil/first-body/1-2.jpg",
+            "images/oil/first-body/1-3.jpg",
+            "images/oil/first-body/1-4.jpg"
           ]
         }
       }
@@ -787,11 +787,11 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/oil/virgin-fantasy/1.jpg",
+          "main": "images/oil/virgin-fantasy/1.jpg",
           "detail": [
-            "/images/oil/virgin-fantasy/1-1.jpg",
-            "/images/oil/virgin-fantasy/1-2.jpg",
-            "/images/oil/virgin-fantasy/1-3.jpg"
+            "images/oil/virgin-fantasy/1-1.jpg",
+            "images/oil/virgin-fantasy/1-2.jpg",
+            "images/oil/virgin-fantasy/1-3.jpg"
           ]
         }
       }
@@ -854,10 +854,10 @@
       "discount": null,
       "stock": 10,
       "images": {
-        "main": "/images/oil/oil-duo/1.jpg",
+        "main": "images/oil/oil-duo/1.jpg",
         "detail": [
-          "/images/oil/oil-duo/1-1.jpg",
-          "/images/oil/oil-duo/1-2.jpg"
+          "images/oil/oil-duo/1-1.jpg",
+          "images/oil/oil-duo/1-2.jpg"
         ]
       }
     }
@@ -878,12 +878,12 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/oil/song-seungjoon/1.jpg",
+          "main": "images/oil/song-seungjoon/1.jpg",
           "detail": [
-            "/images/oil/song-seungjoon/1-1.jpg",
-            "/images/oil/song-seungjoon/1-2.jpg",
-            "/images/oil/song-seungjoon/1-3.jpg",
-            "/images/oil/song-seungjoon/1-4.jpg"
+            "images/oil/song-seungjoon/1-1.jpg",
+            "images/oil/song-seungjoon/1-2.jpg",
+            "images/oil/song-seungjoon/1-3.jpg",
+            "images/oil/song-seungjoon/1-4.jpg"
           ]
         }
       }
@@ -941,14 +941,14 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/hand/white-cuddle/1.jpg",
+          "main": "images/hand/white-cuddle/1.jpg",
           "detail": [
-            "/images/hand/white-cuddle/1-1.jpg",
-            "/images/hand/white-cuddle/1-2.jpg",
-            "/images/hand/white-cuddle/1-3.jpg",
-            "/images/hand/white-cuddle/1-4.jpg",
-            "/images/hand/white-cuddle/1-5.jpg",
-            "/images/hand/white-cuddle/1-6.jpg"
+            "images/hand/white-cuddle/1-1.jpg",
+            "images/hand/white-cuddle/1-2.jpg",
+            "images/hand/white-cuddle/1-3.jpg",
+            "images/hand/white-cuddle/1-4.jpg",
+            "images/hand/white-cuddle/1-5.jpg",
+            "images/hand/white-cuddle/1-6.jpg"
           ]
         }
       }
@@ -1009,14 +1009,14 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/hand/sea-of-green/1.jpg",
+          "main": "images/hand/sea-of-green/1.jpg",
           "detail": [
-            "/images/hand/sea-of-green/1-1.jpg",
-            "/images/hand/sea-of-green/1-2.jpg",
-            "/images/hand/sea-of-green/1-3.jpg",
-            "/images/hand/sea-of-green/1-4.jpg",
-            "/images/hand/sea-of-green/1-5.jpg",
-            "/images/hand/sea-of-green/1-6.jpg"
+            "images/hand/sea-of-green/1-1.jpg",
+            "images/hand/sea-of-green/1-2.jpg",
+            "images/hand/sea-of-green/1-3.jpg",
+            "images/hand/sea-of-green/1-4.jpg",
+            "images/hand/sea-of-green/1-5.jpg",
+            "images/hand/sea-of-green/1-6.jpg"
           ]
         }
       }
@@ -1076,11 +1076,11 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/body-oil/first-body/1.jpg",
+          "main": "images/body-oil/first-body/1.jpg",
           "detail": [
-            "/images/body-oil/first-body/1-1.jpg",
-            "/images/body-oil/first-body/1-2.jpg",
-            "/images/body-oil/first-body/1-3.jpg"
+            "images/body-oil/first-body/1-1.jpg",
+            "images/body-oil/first-body/1-2.jpg",
+            "images/body-oil/first-body/1-3.jpg"
           ]
         }
       }
@@ -1121,11 +1121,11 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/body-oil/foggy-hinoki/1.jpg",
+          "main": "images/body-oil/foggy-hinoki/1.jpg",
           "detail": [
-            "/images/body-oil/foggy-hinoki/1-1.jpg",
-            "/images/body-oil/foggy-hinoki/1-2.jpg",
-            "/images/body-oil/foggy-hinoki/1-3.jpg"
+            "images/body-oil/foggy-hinoki/1-1.jpg",
+            "images/body-oil/foggy-hinoki/1-2.jpg",
+            "images/body-oil/foggy-hinoki/1-3.jpg"
           ]
         }
       }
@@ -1166,11 +1166,11 @@
         "discount": null,
         "stock": 0,
         "images": {
-          "main": "/images/body-oil/sea-of-green/1.jpg",
+          "main": "images/body-oil/sea-of-green/1.jpg",
           "detail": [
-            "/images/body-oil/sea-of-green/1-1.jpg",
-            "/images/body-oil/sea-of-green/1-2.jpg",
-            "/images/body-oil/sea-of-green/1-3.jpg"
+            "images/body-oil/sea-of-green/1-1.jpg",
+            "images/body-oil/sea-of-green/1-2.jpg",
+            "images/body-oil/sea-of-green/1-3.jpg"
           ]
         }
       }
@@ -1209,11 +1209,11 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/body-oil/gua-sha/1.jpg",
+          "main": "images/body-oil/gua-sha/1.jpg",
           "detail": [
-            "/images/body-oil/gua-sha/1-1.jpg",
-            "/images/body-oil/gua-sha/1-2.jpg",
-            "/images/body-oil/gua-sha/1-3.jpg"
+            "images/body-oil/gua-sha/1-1.jpg",
+            "images/body-oil/gua-sha/1-2.jpg",
+            "images/body-oil/gua-sha/1-3.jpg"
           ]
         }
       }
@@ -1254,10 +1254,10 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/body_wash/pear-juicy/1.jpg",
+          "main": "images/body_wash/pear-juicy/1.jpg",
           "detail": [
-            "/images/body_wash/pear-juicy/1-1.jpg",
-            "/images/body_wash/pear-juicy/1-2.jpg"
+            "images/body_wash/pear-juicy/1-1.jpg",
+            "images/body_wash/pear-juicy/1-2.jpg"
           ]
         }
       }
@@ -1298,11 +1298,11 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/body_wash/sea-of-green/1.jpg",
+          "main": "images/body_wash/sea-of-green/1.jpg",
           "detail": [
-            "/images/body_wash/sea-of-green/1-1.jpg",
-            "/images/body_wash/sea-of-green/1-2.jpg",
-            "/images/body_wash/sea-of-green/1-3.jpg"
+            "images/body_wash/sea-of-green/1-1.jpg",
+            "images/body_wash/sea-of-green/1-2.jpg",
+            "images/body_wash/sea-of-green/1-3.jpg"
           ]
         }
       }
@@ -1343,11 +1343,11 @@
         "discount": null,
         "stock": 0,
         "images": {
-          "main": "/images/body_wash/foggy-hinoki/1.jpg",
+          "main": "images/body_wash/foggy-hinoki/1.jpg",
           "detail": [
-            "/images/body_wash/foggy-hinoki/1-1.jpg",
-            "/images/body_wash/foggy-hinoki/1-2.jpg",
-            "/images/body_wash/foggy-hinoki/1-3.jpg"
+            "images/body_wash/foggy-hinoki/1-1.jpg",
+            "images/body_wash/foggy-hinoki/1-2.jpg",
+            "images/body_wash/foggy-hinoki/1-3.jpg"
           ]
         }
       }
@@ -1388,11 +1388,11 @@
         "discount": null,
         "stock": 0,
         "images": {
-          "main": "/images/body_wash/foggy-hinoki/1.jpg",
+          "main": "images/body_wash/foggy-hinoki/1.jpg",
           "detail": [
-            "/images/body_wash/foggy-hinoki/1-1.jpg",
-            "/images/body_wash/foggy-hinoki/1-2.jpg",
-            "/images/body_wash/foggy-hinoki/1-3.jpg"
+            "images/body_wash/foggy-hinoki/1-1.jpg",
+            "images/body_wash/foggy-hinoki/1-2.jpg",
+            "images/body_wash/foggy-hinoki/1-3.jpg"
           ]
         }
       }
@@ -1413,7 +1413,7 @@
     "description": [
       {
         "type": "image",
-        "src": "/images/body_wash/foggi-hinoki/de.jpg"
+        "src": "images/body_wash/foggi-hinoki/de.jpg"
       },
       {
         "type": "text",
@@ -1437,11 +1437,11 @@
         "discount": null,
         "stock": 0,
         "images": {
-          "main": "/images/body_wash/foggy-hinoki/1.jpg",
+          "main": "images/body_wash/foggy-hinoki/1.jpg",
           "detail": [
-            "/images/body_wash/foggy-hinoki/1-1.jpg",
-            "/images/body_wash/foggy-hinoki/1-2.jpg",
-            "/images/body_wash/foggy-hinoki/1-3.jpg"
+            "images/body_wash/foggy-hinoki/1-1.jpg",
+            "images/body_wash/foggy-hinoki/1-2.jpg",
+            "images/body_wash/foggy-hinoki/1-3.jpg"
           ]
         }
       }
@@ -1462,7 +1462,7 @@
     "description": [
       {
         "type": "image",
-        "src": "/images/body_wash/first-body/de.jpg"
+        "src": "images/body_wash/first-body/de.jpg"
       },
       {
         "type": "text",
@@ -1484,9 +1484,9 @@
         "discount": null,
         "stock": 0,
         "images": {
-          "main": "/images/home/tag/1.jpg",
+          "main": "images/home/tag/1.jpg",
           "detail": [
-            "/images/home/tag/1-1.jpg"
+            "images/home/tag/1-1.jpg"
           ]
         }
       }
@@ -1543,10 +1543,10 @@
         "discount": null,
         "stock": 0,
         "images": {
-          "main": "/images/home/mood_spray/1.jpg",
+          "main": "images/home/mood_spray/1.jpg",
           "detail": [
-            "/images/home/mood_spray/1-1.jpg",
-            "/images/home/mood_spray/1-2.jpg"
+            "images/home/mood_spray/1-1.jpg",
+            "images/home/mood_spray/1-2.jpg"
           ]
         }
       }
@@ -1605,10 +1605,10 @@
         "discount": null,
         "stock": 0,
         "images": {
-          "main": "/images/home/mood_spray/1.jpg",
+          "main": "images/home/mood_spray/1.jpg",
           "detail": [
-            "/images/home/mood_spray/1-1.jpg",
-            "/images/home/mood_spray/1-2.jpg"
+            "images/home/mood_spray/1-1.jpg",
+            "images/home/mood_spray/1-2.jpg"
           ]
         }
       }
@@ -1669,10 +1669,10 @@
         "discount": null,
         "stock": 10,
         "images": {
-          "main": "/images/oil/oil-duo/1.jpg",
+          "main": "images/oil/oil-duo/1.jpg",
           "detail": [
-            "/images/oil/oil-duo/1-1.jpg",
-            "/images/oil/oil-duo/1-2.jpg"
+            "images/oil/oil-duo/1-1.jpg",
+            "images/oil/oil-duo/1-2.jpg"
           ]
         }
       }
@@ -1684,7 +1684,7 @@
     "description": [
       {
         "type": "image",
-        "src": "/images/oil/oil-duo/de.jpg"
+        "src": "images/oil/oil-duo/de.jpg"
       },
       {
         "type": "text",
