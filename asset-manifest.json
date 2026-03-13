@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/unvanish/static/css/main.b482edac.css",
-    "main.js": "/unvanish/static/js/main.eeab0427.js",
+    "main.js": "/unvanish/static/js/main.cac32646.js",
     "static/js/453.50031688.chunk.js": "/unvanish/static/js/453.50031688.chunk.js",
     "static/media/logo.png": "/unvanish/static/media/logo.11e31ce7562f8baac5c0.png",
     "index.html": "/unvanish/index.html",
     "main.b482edac.css.map": "/unvanish/static/css/main.b482edac.css.map",
-    "main.eeab0427.js.map": "/unvanish/static/js/main.eeab0427.js.map",
+    "main.cac32646.js.map": "/unvanish/static/js/main.cac32646.js.map",
     "453.50031688.chunk.js.map": "/unvanish/static/js/453.50031688.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b482edac.css",
-    "static/js/main.eeab0427.js"
+    "static/js/main.cac32646.js"
   ]
 }
