@@ -11,7 +11,13 @@ const dedup = (arr) => {
     return true;
   });
 };
-const getMain  = (p) => process.env.PUBLIC_URL + (p.variants[0]?.images?.main || '');
+
+// 메인 이미지 경로 처리 (슬래시 중복 방지 로직 추가)
+const getMain = (p) => {
+  const src = p.variants[0]?.images?.main || '';
+  return `${process.env.PUBLIC_URL}/${src.replace(/^\//, '')}`;
+};
+
 const getPrice = (p) => {
   const v = p.variants[0];
   if (!v) return 0;
@@ -91,7 +97,12 @@ function HomeCard({ product, delay }) {
   const v       = product.variants[0];
   const price   = getPrice(product);
   const soldOut = v?.stock === 0;
-  const detail  = v?.images?.detail?.[0];
+  
+  // 호버 시 보여줄 상세 이미지 경로 처리 수정
+  const detailSrc = v?.images?.detail?.[0];
+  const detailFull = detailSrc 
+    ? `${process.env.PUBLIC_URL}/${detailSrc.replace(/^\//, '')}` 
+    : null;
 
   return (
     <Link
@@ -103,7 +114,7 @@ function HomeCard({ product, delay }) {
     >
       <div className="home-card__img-wrap">
         <img
-          src={hovered && detail ? detail : getMain(product)}
+          src={hovered && detailFull ? detailFull : getMain(product)}
           alt={product.name}
           className="home-card__img"
           loading="lazy"

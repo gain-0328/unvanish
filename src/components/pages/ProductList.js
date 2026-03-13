@@ -13,7 +13,12 @@ const dedup = (arr) => {
   });
 };
 
-const getMain = (p) => process.env.PUBLIC_URL + (p.variants[0]?.images?.main || '');
+// 메인 이미지 경로 처리 (replace를 사용하여 슬래시 중복 방지)
+const getMain = (p) => {
+  const src = p.variants[0]?.images?.main || '';
+  return `${process.env.PUBLIC_URL}/${src.replace(/^\//, '')}`;
+};
+
 const getPrice = (p) => {
   const v = p.variants[0];
   if (!v) return 0;
@@ -58,25 +63,20 @@ const SORT_OPTIONS = [
 ];
 
 export default function ProductList() {
-  // /:section/:slug 패턴일 때만 값이 있음
   const { section: paramSection, slug } = useParams();
   const { pathname } = useLocation();
 
-  // /giftset, /acc 처럼 slug 없는 단독 경로 대응
-  // pathname = '/giftset' → section = 'giftset'
   const section = paramSection ?? pathname.replace('/', '');
 
   const [sort, setSort] = useState('default');
   const [tabFilter, setTabFilter] = useState('all');
 
-  // 1. URL 변경 시 상태 초기화
   useEffect(() => {
     setTabFilter('all');
     setSort('default');
     window.scrollTo(0, 0);
   }, [section, slug]);
 
-  // 2. 탭 목록용 — 탭 필터 적용 전 전체 아이템
   const allItems = useMemo(() => {
     const result = dedup(products);
     if (section === 'collection' && slug) {
@@ -85,7 +85,6 @@ export default function ProductList() {
     return result;
   }, [section, slug]);
 
-  // 3. 실제 렌더링용 — 탭 필터 + 정렬 적용
   const items = useMemo(() => {
     let result = dedup(products);
 
@@ -102,12 +101,10 @@ export default function ProductList() {
       result = result.filter((p) => p.category === 'acc');
     }
 
-    // 컬렉션 내부 탭 필터
     if (section === 'collection' && tabFilter !== 'all') {
       result = result.filter((p) => p.type === tabFilter);
     }
 
-    // 정렬
     return [...result].sort((a, b) => {
       if (sort === 'price_asc')  return getPrice(a) - getPrice(b);
       if (sort === 'price_desc') return getPrice(b) - getPrice(a);
@@ -116,7 +113,6 @@ export default function ProductList() {
     });
   }, [section, slug, tabFilter, sort]);
 
-  // 4. Intersection Observer (애니메이션)
   useEffect(() => {
     const obs = new IntersectionObserver(
       (entries) => {
@@ -134,7 +130,6 @@ export default function ProductList() {
     return () => obs.disconnect();
   }, [items]);
 
-  // allItems 기준으로 탭 목록 생성
   const typeTabOptions = section === 'collection'
     ? ['all', ...new Set(allItems.map((p) => p.type).filter(Boolean))]
     : [];
@@ -194,7 +189,12 @@ function PLCard({ product, delay }) {
   const price = getPrice(product);
   const v = product.variants[0];
   const soldOut = v?.stock === 0;
-  const detail = v?.images?.detail?.[0];
+
+  // 상세 이미지(호버 시 노출) 경로 처리 수정
+  const detailSrc = v?.images?.detail?.[0];
+  const detailFull = detailSrc 
+    ? `${process.env.PUBLIC_URL}/${detailSrc.replace(/^\//, '')}` 
+    : null;
 
   return (
     <Link
@@ -206,7 +206,7 @@ function PLCard({ product, delay }) {
     >
       <div className="pl-card_img-wrap">
         <img
-          src={hovered && detail ? detail : getMain(product)}
+          src={hovered && detailFull ? detailFull : getMain(product)}
           alt={product.name}
           className="pl-card_img"
           loading="lazy"
